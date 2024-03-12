@@ -1,0 +1,15 @@
+data:
+  rotation_angle: 7.0
+  validation_size: 0.1
+  batch_size: 500
+  num_workers: 3
+
+train:
+  optimizer: "SGD"
+  epochs: 5
+  sgd:
+    learning_rate: 0.2
+    momentum: 0.6
+  ada_delta:
+    learning_rate: 0.6
+    reduce_lr_gamma: 0.7

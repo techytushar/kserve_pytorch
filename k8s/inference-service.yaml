@@ -1,0 +1,9 @@
+apiVersion: serving.kserve.io/v1beta1
+kind: InferenceService
+metadata:
+  name: mnist-classifier-service
+spec:
+  predictor:
+    containers:
+      - name: mnist-kserve-container
+        image: hunter303/mnist_classifier:latest
